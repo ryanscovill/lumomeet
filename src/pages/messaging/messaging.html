@@ -8,29 +8,27 @@
 
 <ion-content>
   <ion-list>
-    <ion-card (swipe)="swipeEvent($event)">
-      <ion-item>
-        Swiped: {{swipe}} times
-      </ion-item>
-    </ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <ion-card>
+            <ion-card-header>
+              Joey
+            </ion-card-header>
 
-    <ion-card (swipe)="swipeEvent($event)">
-      <ion-item>
-        <h2 class="header">Joey (17)</h2>
-        <p>Matched September 5th</p>
-      </ion-item>
+            <ion-card-content>
+              Hey, I'm Joey, want to hit up a starbucks sometime?
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
 
-      <ion-card-content>
-        <p><strong>Hobbies: </strong>#Swimming, #OverWatch </p>
-        <br/>
-        <p class="small"><strong>Looking to: </strong>#GrabCoffee, #Swimming</p>
-        <br/>
-        <p class="small"><strong>Bio: </strong>Whenever I am sad I dive into a pool</p>
-      </ion-card-content>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6></ion-col>
+      </ion-row>
+    </ion-grid>
 
 
-
-    </ion-card>
 
   </ion-list>
 </ion-content>

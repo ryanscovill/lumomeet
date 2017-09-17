@@ -7,16 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class MessagesPage {
 
-
-  public swipe: number = 0;
-
   constructor(public navCtrl: NavController) {
 
   }
-
-  swipeEvent(e) {
-    this.swipe++
-
-  }
-
 }
