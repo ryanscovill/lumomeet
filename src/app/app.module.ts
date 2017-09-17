@@ -8,6 +8,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MatchesPage } from '../pages/matches/matches';
+import { MessagesPage } from '../pages/messaging/messaging';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -20,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     HomePage,
     TabsPage,
-    MatchesPage
+    MatchesPage,
+    MessagesPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     HomePage,
     TabsPage,
-    MatchesPage
+    MatchesPage,
+    MessagesPage
   ],
   providers: [
     StatusBar,
