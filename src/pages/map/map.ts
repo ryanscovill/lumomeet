@@ -51,6 +51,15 @@ export class MapPage {
     position = new google.maps.LatLng(49.2777558,-122.9252403);
     marker = new google.maps.Marker({position: position, title: ""});
     marker.setMap(this.map);
+
+    position = new google.maps.LatLng(49.280933,-122.911143);
+    marker = new google.maps.Marker({position: position, title: ""});
+    marker.setMap(this.map);
+
+     position = new google.maps.LatLng(49.280214,-122.911344);
+        marker = new google.maps.Marker({position: position, title: ""});
+        marker.setMap(this.map);
+
     google.maps.event.trigger(this.map, 'resize');
 
 
