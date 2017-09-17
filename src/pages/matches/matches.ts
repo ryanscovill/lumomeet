@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { MessagesPage } from '../../pages/messaging/messaging';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-contact',
@@ -8,12 +9,33 @@ import { MessagesPage } from '../../pages/messaging/messaging';
 })
 export class MatchesPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
 
   }
 
   swipeEvent(e) {
-    this.navCtrl.parent.select(2);
+    this.presentConfirm();
   }
 
+  presentConfirm() {
+    let alert = this.alertCtrl.create({
+      title: 'Do you want to engage?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+
+          }
+        },
+        {
+          text: 'Ok',
+          handler: () => {
+            this.navCtrl.parent.select(2);
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
 }

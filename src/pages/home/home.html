@@ -4,25 +4,15 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content centre>
+<ion-content padding>
 
-  <div *ngIf="showQuestion" class="text-center">
+  <h2>How do you feel right now?</h2>
 
-    <img height= "80%" width="70%" src="assets/img/PROFILE.png" class="LogoImg">
-    <br>
-    <h2>How do you feel right now?</h2>
-
-    <span (click)="clickOption(0)"><img src="assets/img/SAD.png" class="moodImg"></span>
-    <span (click)="clickOption(1)"><img src="assets/img/Upset.png" class="moodImg"></span>
-    <span (click)="clickOption(3)"><img src="assets/img/FLATFACE.png" class="moodImg"></span>
-    <span (click)="clickOption(4)"><img src="assets/img/HAPPY-1.png" class="moodImg"></span>
-    <span (click)="clickOption(5)"><img src="assets/img/REALLYHAPPY.png" class="moodImg"></span>
-
-  </div>
-
-  <div [ngClass]="{'hidden': !showMap}">
-
-  </div>
+  <span (click)="clickOption(0)"><img src="assets/img/SAD.png" class="moodImg"></span>
+  <span (click)="clickOption(1)"><img src="assets/img/Upset.png" class="moodImg"></span>
+  <span (click)="clickOption(3)"><img src="assets/img/FLATFACE.png" class="moodImg"></span>
+  <span (click)="clickOption(4)"><img src="assets/img/HAPPY-1.png" class="moodImg"></span>
+  <span (click)="clickOption(5)"><img src="assets/img/REALLYHAPPY.png" class="moodImg"></span>
 
 
 
