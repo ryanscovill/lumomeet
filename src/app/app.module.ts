@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MatchesPage } from '../pages/matches/matches';
 import { MessagesPage } from '../pages/messaging/messaging';
+import { MapPage } from '../pages/map/map';
 
 
 
@@ -24,7 +25,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     HomePage,
     TabsPage,
     MatchesPage,
-    MessagesPage
+    MessagesPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     HomePage,
     TabsPage,
     MatchesPage,
-    MessagesPage
+    MessagesPage,
+    MapPage
   ],
   providers: [
     StatusBar,
