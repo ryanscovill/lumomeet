@@ -16,8 +16,8 @@
 
   </div>
 
-  <div *ngIf="showMap">
-    <div id="map"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=13&center=49.2781%2C-122.9199&key=AIzaSyCLAWI0xDnZkkmkV0O69f8JzQ-8RBodDUs" allowfullscreen></iframe></div>
+  <div [ngClass]="{'hidden': !showMap}">
+    <div #map id="map" style="position: inherit"></div>
     <button ion-button (click)="goBack()">Go Back</button>
   </div>
 
