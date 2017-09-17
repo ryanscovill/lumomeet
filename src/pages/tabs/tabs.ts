@@ -5,6 +5,7 @@ import { ProfilePage } from '../profile/profile';
 import { HomePage } from '../home/home';
 import { MatchesPage } from '../matches/matches';
 import { MessagesPage } from '../messaging/messaging';
+import { MemoriesPage } from '../memories/memories';
 
 
 @Component({
@@ -17,6 +18,7 @@ export class TabsPage {
   tab3Root = ProfilePage;
   tab4Root = MatchesPage;
   tab5Root = MessagesPage;
+  tab6Root = MemoriesPage;
 
 
   constructor() {

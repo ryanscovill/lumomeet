@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MessagesPage } from '../../pages/messaging/messaging';
 
 @Component({
   selector: 'page-contact',
@@ -7,16 +8,12 @@ import { NavController } from 'ionic-angular';
 })
 export class MatchesPage {
 
-
-  public swipe: number = 0;
-
   constructor(public navCtrl: NavController) {
 
   }
 
   swipeEvent(e) {
-    this.swipe++
-
+    this.navCtrl.parent.select(2);
   }
 
 }

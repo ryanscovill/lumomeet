@@ -68,7 +68,7 @@ export class MapPage {
   presentAlert() {
     let alert = this.alertCtrl.create({
       title: 'Matches Nearby',
-      subTitle: 'There are 2 people feeling the same as you.',
+      subTitle: 'There are 4 people feeling the same as you.',
       buttons: ['Ok']
     });
     alert.present();
