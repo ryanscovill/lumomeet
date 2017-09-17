@@ -6,27 +6,38 @@
 
 <ion-content padding>
 
-  <div class="text-center">
+  <div *ngIf="showQuestion" class="text-center">
     <h2>How do you feel?</h2>
+
+    <span (click)="clickOption(0)"><img src="assets/img/SAD.png" class="moodImg"></span>
+    <span (click)="clickOption(1)"><img src="assets/img/Upset.png" class="moodImg"></span>
+    <span (click)="clickOption(2)"><img src="assets/img/HAPPY-1.png" class="moodImg"></span>
+    <span (click)="clickOption(3)"><img src="assets/img/REALLYHAPPY.png" class="moodImg"></span>
+
+  </div>
+
+  <div *ngIf="showMap">
+    <div id="map"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=13&center=49.2781%2C-122.9199&key=AIzaSyCLAWI0xDnZkkmkV0O69f8JzQ-8RBodDUs" allowfullscreen></iframe></div>
+    <button ion-button (click)="goBack()">Go Back</button>
   </div>
 
 
 
-<ion-slides pager>
-  <ion-slide>
-    <ion-list>
-    <ion-input type="text" placeholder="What's your name?"></ion-input>
-	</ion-list>
-  </ion-slide>
+<!--<ion-slides pager>-->
+  <!--<ion-slide>-->
+    <!--<ion-list>-->
+    <!--<ion-input type="text" placeholder="What's your name?"></ion-input>-->
+	<!--</ion-list>-->
+  <!--</ion-slide>-->
 
-  <ion-slide style="background-color: blue">
-    <h2>Slide 2</h2>
-  </ion-slide>
+  <!--<ion-slide style="background-color: blue">-->
+    <!--<h2>Slide 2</h2>-->
+  <!--</ion-slide>-->
 
-  <ion-slide style="background-color: red">
-    <h2>Slide 3</h2>
-  </ion-slide>
+  <!--<ion-slide style="background-color: red">-->
+    <!--<h2>Slide 3</h2>-->
+  <!--</ion-slide>-->
 
-</ion-slides>
+<!--</ion-slides>-->
 
 </ion-content>
