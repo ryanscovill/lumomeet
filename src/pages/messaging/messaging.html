@@ -11,7 +11,7 @@
     <ion-grid>
       <ion-row>
         <ion-col col-6>
-          <ion-card *ngFor="let message of messages">
+          <ion-card *ngFor="let message of getMessages()">
             <ion-card-header>
               {{message.name}}
             </ion-card-header>
@@ -27,8 +27,5 @@
         <ion-col col-6></ion-col>
       </ion-row>
     </ion-grid>
-
-
-
   </ion-list>
 </ion-content>
