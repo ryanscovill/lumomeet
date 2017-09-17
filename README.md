@@ -1,26 +1,11 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Blüm
 
-## How to use this template
+ BLüM is a mobile application which allows you to match and engage with others experiencing the same mood, within a user-defined radius, reducing feelings of loneliness and social isolation related to mood, and breaking the MDD-Social Isolation/Loneliness cycle.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+# Instuctions
+Download android-debug.apk and run on device.
+To build for ios, follow ionic instructions: https://ionicframework.com/docs/intro/deploying/
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
+#Team
+Marco Law, James Kan, Ryan Scovill
 
