@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ChatPage } from '../../pages/chat/chat';
 
 @Component({
   selector: 'page-contact',
@@ -19,6 +20,10 @@ export class MessagesPage {
 
   public addMessage(name: string, message: string): void {
     this._messages.push({name: name, message: message});
+  }
+
+  public openChat(name: string): void {
+   this.navCtrl.push(ChatPage,{name: name});
   }
 
 }

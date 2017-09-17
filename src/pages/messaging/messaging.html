@@ -10,8 +10,8 @@
   <ion-list>
     <ion-grid>
       <ion-row>
-        <ion-col col-6>
-          <ion-card *ngFor="let message of getMessages()">
+        <ion-col>
+          <ion-card *ngFor="let message of getMessages(); let i = index " (click)="openChat(message.name)">
             <ion-card-header>
               {{message.name}}
             </ion-card-header>
