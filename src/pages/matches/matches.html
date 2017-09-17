@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Matches
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card (swipe)="swipeEvent($event)">
+      <ion-item>
+        Swiped: {{swipe}} times
+      </ion-item>
+    </ion-card>
+
+    <ion-card (swipe)="swipeEvent($event)">
+      <ion-item>
+        <h2 class="header">Joey (17)</h2>
+        <p>Matched September 5th</p>
+      </ion-item>
+
+      <ion-card-content>
+        <p><strong>Hobbies: </strong>#Swimming, #OverWatch </p>
+        <br/>
+        <p class="small"><strong>Looking to: </strong>#GrabCoffee, #Swimming</p>
+        <br/>
+        <p class="small"><strong>Bio: </strong>Whenever I am sad I dive into a pool</p>
+      </ion-card-content>
+
+
+
+    </ion-card>
+
+  </ion-list>
+</ion-content>
